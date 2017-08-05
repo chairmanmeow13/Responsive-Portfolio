@@ -19,6 +19,13 @@ body {
   clear: both;
 }
 
+.wrapper {
+    /* Box-model */
+  width: 1024px;
+  /* Positioning */
+  margin: 40px auto;
+}
+
 h1,
 h2,
 h3,
@@ -237,3 +244,70 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+/desktop/
+@media screen and (min-width: 769px) {
+    .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+  #main-section,
+  #sidebar {
+    width: 100%;
+  }
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/tablet/
+@media screen and (max-width: 768px) and (min-width: 321px) {
+    .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 10px;
+  }
+
+  header {
+    position: static;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+  #sidebar {
+    clear: both;
+    margin-top: 40px;
+    position: absolute;
+    left: 0px;
+  }
+}
+
+/mobile/
+@media screen and (max-width: 320px) {
+      .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 5px;
+  }
+
+  header {
+    position: static;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+  #sidebar {
+    clear: both;
+    margin-top: 40px;
+    position: absolute;
+    left: 0px;
+  }
+}
+}
+
+
